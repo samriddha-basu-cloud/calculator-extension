@@ -1,0 +1,11 @@
+calculator-extension/
+│
+├── manifest.json
+├── background.js
+├── popup.html
+├── popup.js
+├── congratulations.html
+├── icons/
+│   ├── icon16.png
+│   ├── icon48.png
+│   └── icon128.png

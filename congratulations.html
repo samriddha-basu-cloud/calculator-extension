@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Congratulations!</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(180deg, #667eea 30%, #764ba2 160%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+    }
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confetti-canvas"></canvas>
+  <div class="container">
+    <img src="icons/icon128.png" alt="Calculator Icon" class="icon">
+    <h1>Congratulations!</h1>
+    <p>Thank you for installing the Calculator Extension.</p>
+    <p>To start using it, please pin the extension to your toolbar.</p>
+  </div>
+
+  <!-- Load the confetti library locally -->
+  <script src="libs/confetti.browser.min.js"></script>
+  <script src="confetti.js"></script>
+</body>
+</html>
